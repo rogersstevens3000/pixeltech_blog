@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Open+Sans&family=Ubuntu&display=swap');
+// html,
+// body {
+//   padding: 0;
+//   margin: 0;
+//   font-family: 'Open Sans', sans-serif;
+//   &:before{
+//     content:'';
+//     content: "";
+//     width: 100%;
+//     height: 100vh;
+//     color: rgb(0, 0, 0);
+//     // background: linear-gradient(to right bottom, #9210b3, #6f1ed2, #e4e817, #f0a910, #dc5216);
+    
+//     // background: #D3D3D3;
+//     //background-image: url("../public/SL-112119-25250-54.jpg");
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     z-index: -1;
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//   }
+// }
+html,
+body {
+  padding: 0;
+  margin: 0;
+  
+  font-family: 'Open Sans', sans-serif;
+	//background: linear-gradient(-45deg, #b828df, #e83d7f, #d523d5, #413fdb,#3fbcdb,#d6e157,#e45d37);
+	background-image: url("../public/SL-112119-25250-54.jpg");
+//  background-color: rgb(255, 255, 255);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: rgb(0, 0, 0);
+	//animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+// .postdetails{
+//   background: url("../public/SL-112119-25250-54.jpg");
+//   background-size: 100% 100%;
+//   background-attachment: fixed;
+// }
+
+// @keyframes gradient {
+// 	0% {
+// 		background-position: 0% 50%;
+// 	}
+// 	50% {
+// 		background-position: 100% 50%;
+// 	}
+// 	100% {
+// 		background-position: 0% 50%;
+// 	}
+// }
+
+
+
+
+
+.text-shadow{
+  text-shadow: 0px 2px 0px rgb(0 0 0 / 30%);
+}
+
+.adjacent-post{
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+  }
+  &:hover{
+    & .arrow-btn{
+      width: 60px;
+    }
+  }
+}
+
+.react-multi-carousel-list {
+  & .arrow-btn{
+    transition: width 300ms ease;
+    width: 50px;
+    &:hover{
+      width: 60px;
+    }
+  }
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
